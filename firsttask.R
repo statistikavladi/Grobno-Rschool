@@ -122,3 +122,12 @@ df <- data.frame(vector1 = v1, vector2 = v2, ABC = v3)
 
 df1 <- data.frame( Numvec = (sample(1:20, 10)), Charvector = letters[1:10], stringsAsFactors = FALSE)
 df1$fact <- factor(rep("male", "female" ,times = 5))
+
+#----------------------------------------------------------------
+
+x1 <- rnorm(100)
+t <- t.test(x1)
+
+#---------------------------------------
+li <- list(name= "Vladi", df = mtcars, n = nrow(mtcars))
+summary(li$df)
